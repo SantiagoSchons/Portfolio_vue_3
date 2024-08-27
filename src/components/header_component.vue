@@ -26,6 +26,11 @@ a{
   color:#9C9C9C !important;
 }
 
+@media (max-width: 990px) {
+    .navbar-nav{
+        text-align: center;
+    }
+}
 @media (min-width: 300px) {
     .navbar-expand-lg .navbar-nav {
         flex-direction: row;

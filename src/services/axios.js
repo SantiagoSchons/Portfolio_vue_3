@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const apiClient = axios.create({
-    baseURL: 'https://my-json-server.typicode.com/SantiagoSchons/db',
+    baseURL: 'http://172.17.0.3:5000',
     withCredentials: false,
     headers: {
       Accept: 'application/json',
@@ -11,6 +11,6 @@ const apiClient = axios.create({
 
 export default {
     getEvents() {
-      return apiClient.get('/certificacoes')
+      return apiClient.get('/certificacoes/')
     }
 }

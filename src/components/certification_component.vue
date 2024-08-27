@@ -20,8 +20,8 @@ onMounted(() => {
     <div class="container">
         <div class="row"><div class="col"><h2>Certificações</h2></div></div>
         <div class="event-container">
-            <div v-for="event in events" :key="event.id" class="certificado row">
-                <div class="event-content col">
+            <div v-for="event in events" :key="event.id" class="certificado">
+                <div class="event-content">
                     <h5>{{ event.title }}</h5>
                     <p><a :href="event.url" target="_blank" >Ver credencial</a></p>
                     <img :src="event.image" :alt="`Image for ${event.title}`">
